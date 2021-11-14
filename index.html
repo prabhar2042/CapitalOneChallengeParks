@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find Activity - National Park App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <div class="container" style="margin-top: 100px">
+      <nav class="navbar navbar-dark my-3">
+        <a class="navbar-brand" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0"></ul>
+        </div>
+      </nav>
+
+      <main class="content-area">
+        <div class="search-bar col-md-6 mx-auto">
+          <h1 class="text-center">Search your Activity</h1>
+          <div class="my-5">
+            <div class="search-box">
+              <input
+                style="background-color: #fff; cursor: pointer"
+                id="search-field"
+                type="text"
+                class="form-control"
+                placeholder="Enter your activity name"
+                onkeypress="keyPressSuggestion()"
+                onKeyUp="keyPressSuggestion()"
+              />
+              <button
+                onclick="searchActivity()"
+                class="btn btn-success search-btn"
+              >
+                Search
+              </button>
+            </div>
+            <div id="search-suggestion">
+              <ul>
+                <li style="cursor: pointer"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Single Lyrics -->
+        <h3 id="error-message" class="text-danger"></h3>
+        <div id="song-lyrics" class="single-lyrics text-center"></div>
+        <div
+          id="song-container"
+          class="search-result col-md-8 mx-auto py-4"
+        ></div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script Here -->
+  </body>
+</html>
