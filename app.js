@@ -200,7 +200,7 @@ const displayParksDetails = async(parks) => {
     html+="<br>Directions Info: "+parks.directionsInfo;
     html+='<br>addresses: '+parks.addresses[0];
     html+=`<br>Web: <a href='${parks.url}'>${parks.fullName}</a>`
-    html+='<br> Wecams:<br>'
+    html+='<br> Webcams:<br>'
 
     let res;
     const url = `${baseUrl}webcams?${new URLSearchParams({
