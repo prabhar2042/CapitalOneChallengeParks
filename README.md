@@ -1,11 +1,5 @@
-# hard-rock-solution
-### Search Song
-api link: https://api.lyrics.ovh/suggest/:searchText
+Web App to find national parks associated with certain activities
 
-example: https://api.lyrics.ovh/suggest/hello
+Capital One Challenge
 
-### Lyric
-lyric link: https://api.lyrics.ovh/v1/:artist/:title
-
-example: https://api.lyrics.ovh/v1/Adele/Hello
-# national-park-activity
+Site Link: https://prabhar2042.github.io/CapitalOneChallengeParks/
